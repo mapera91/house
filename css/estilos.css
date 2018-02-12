@@ -309,6 +309,15 @@ footer {
     text-align: center;
 }
 
+.img {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 600px);
+    grid-template-rows: repeat(2,400px);
+    grid-gap: 40px;
+    justify-content: center;
+}
+
 .telefono {
     width: 80%;
     margin: 20px;
@@ -377,7 +386,7 @@ h1 {
     margin: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
-    grid-template-rows: repeat(3,400px);
+    grid-template-rows: repeat(1,400px);
     grid-gap: 40px;
     justify-content: center;
 }
@@ -385,9 +394,9 @@ h1 {
 .centrado h3 {
     padding: 10PX;
     text-align: center;
-    colo
-    r: brown;
+    color: brown;
 }
+
 .b {
     background-color: brown;
     color: white;
@@ -397,7 +406,7 @@ h1 {
 }
 
 .derecho{
-    float: right
+    float: right;
 }
 
 .izquierdo {
@@ -406,7 +415,7 @@ h1 {
 
 .pagina {
     text-align: center;
-    margin-top: -400px;
+    padding: 50px;
 }
 
 .numero {
@@ -415,6 +424,7 @@ h1 {
     color: white;
     font-size: 20px;
     padding: 10px;
+    border-radius: 5px;
 
 }
 
@@ -474,6 +484,10 @@ h1 {
     .izdo,.centro,.dcho {
         flex-basis: 200px;
     }
+    .img {
+        grid-template-columns: repeat(auto-fit, 400px);
+        grid-template-rows: repeat(3,300px);
+    }
 }
 
 @media (max-width:420px) {
@@ -505,6 +519,10 @@ h1 {
     }
     .izdo {
         text-align: center
+    }
+    .img {
+        grid-template-columns: repeat(auto-fit, 300px);
+        grid-template-rows: repeat(3,200px);
     }
 }
 
