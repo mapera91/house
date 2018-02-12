@@ -385,12 +385,38 @@ h1 {
 .centrado h3 {
     padding: 10PX;
     text-align: center;
-    color: brown;
+    colo
+    r: brown;
+}
+.b {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
 }
 
+.derecho{
+    float: right
+}
 
+.izquierdo {
+    float: left;
+}
 
+.pagina {
+    text-align: center;
+    margin-top: -400px;
+}
 
+.numero {
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+
+}
 
 /*MEDIA QUERIES*/
 
