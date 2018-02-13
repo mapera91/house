@@ -171,6 +171,13 @@ a {
     align-self: center;
 }
 
+.acceso {
+    border: solid 4px brown;
+    border-radius: 100px;
+    margin: 20px;
+    text-align: center;
+}
+
 .eslogan {
     background-image: url('../img/4.jpg');
     background-position: center;
@@ -351,10 +358,14 @@ form.contacto .fila {
     justify-content: flex-start;
 }
 
-.form.contacto .col {
+form.contacto .col {
     padding: 10px;
     display: flex;
     justify-content: flex-start;
+}
+
+form.contacto.casa{
+    width: 50%;
 }
 
 .legal h2 {
@@ -447,6 +458,13 @@ h1 {
     .izdo,.centro,.dcho {
         flex-basis: 200px;
     }
+    .contenedor {
+        grid-template-rows: repeat(2,400px);
+    }
+    .img {
+        grid-template-columns: repeat(auto-fit, 400px);
+        grid-template-rows: repeat(3,300px);
+    }
 } 
 
 @media (max-width:640px) {
@@ -472,8 +490,6 @@ h1 {
     }
     .form {
         text-align: center;
-    }
-    .form {
         width: 100%;
         padding: 0px;
         display: flex;
@@ -483,6 +499,9 @@ h1 {
     }
     .izdo,.centro,.dcho {
         flex-basis: 200px;
+    }
+    .contenedor {
+        grid-template-rows: repeat(2,400px);
     }
     .img {
         grid-template-columns: repeat(auto-fit, 400px);
