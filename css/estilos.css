@@ -173,6 +173,7 @@ a {
 
 .acceso {
     border: solid 4px brown;
+    background-color: white;
     border-radius: 100px;
     margin: 20px;
     text-align: center;
@@ -365,7 +366,7 @@ form.contacto .col {
 }
 
 form.contacto.casa{
-    width: 50%;
+    width: 80%;
 }
 
 .legal h2 {
@@ -465,6 +466,11 @@ h1 {
         grid-template-columns: repeat(auto-fit, 400px);
         grid-template-rows: repeat(3,300px);
     }
+    form.contacto.casa {
+        width: 50%;
+        padding: 10px;
+        margin: 10px;
+    }
 } 
 
 @media (max-width:640px) {
@@ -507,6 +513,11 @@ h1 {
         grid-template-columns: repeat(auto-fit, 400px);
         grid-template-rows: repeat(3,300px);
     }
+    form.contacto.casa {
+        width: 60%;
+        padding: 10px;
+        margin: 10px;
+    }
 }
 
 @media (max-width:420px) {
@@ -542,6 +553,11 @@ h1 {
     .img {
         grid-template-columns: repeat(auto-fit, 300px);
         grid-template-rows: repeat(3,200px);
+    }
+    form.contacto.casa {
+        width: 70%;
+        padding: 10px;
+        margin: 10px;
     }
 }
 
