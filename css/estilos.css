@@ -179,20 +179,6 @@ a {
     text-align: center;
 }
 
-.eslogan {
-    background-image: url('../img/4.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-size: 50px;
-    text-align: center;
-    color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .form {
     width: 100%;
     padding: 0px;
@@ -255,11 +241,6 @@ footer {
     color: burlywood;
     font-size: 18px;
     padding: 5px; 
-}
-
-.centro p {
-    color: burlywood;
-    font-weight: bolder;
 }
 
 .centro a:hover {
@@ -369,6 +350,11 @@ form.contacto.casa{
     width: 80%;
 }
 
+form.contacto.casa p{
+    color: brown;
+}
+
+
 .legal h2 {
     font-size: 26px;
 }
@@ -455,21 +441,10 @@ h1 {
     }
     .col {
         flex-basis: initial;
-    } 
+        margin: 20px;
+    }
     .izdo,.centro,.dcho {
         flex-basis: 200px;
-    }
-    .contenedor {
-        grid-template-rows: repeat(2,400px);
-    }
-    .img {
-        grid-template-columns: repeat(auto-fit, 400px);
-        grid-template-rows: repeat(3,300px);
-    }
-    form.contacto.casa {
-        width: 50%;
-        padding: 10px;
-        margin: 10px;
     }
 } 
 
@@ -478,21 +453,12 @@ h1 {
         display: initial;
     }
     nav {
-        display: none
+        display: none;
     }
     .hero h1 {
         font-size: 36px;
         text-align: center;
         padding: 0 10px;
-    }
-    .hero h2 {
-        font-size: 24px;
-        text-align: center;
-        padding: 0 10px;
-    }
-    .eslogan {
-        font-size: 30px;
-        margin: 0px;
     }
     .form {
         text-align: center;
@@ -506,35 +472,12 @@ h1 {
     .izdo,.centro,.dcho {
         flex-basis: 200px;
     }
-    .contenedor {
-        grid-template-rows: repeat(2,400px);
-    }
-    .img {
-        grid-template-columns: repeat(auto-fit, 400px);
-        grid-template-rows: repeat(3,300px);
-    }
-    form.contacto.casa {
-        width: 60%;
-        padding: 10px;
-        margin: 10px;
-    }
 }
 
 @media (max-width:420px) {
     .fila {
-        margin: 20px 0px 20px 0px;
-    }
-    .tarjeta{
-        width: 200px;
-        height: 300px;
-        font-size: 16px;
-    }
-    .imagen {
-        width: 200px;
-        height: 100px;
-        overflow: hidden;
-        text-align: top;
-    }
+        margin: 10px;
+    } 
     .form input {
         font-size: 20px;
         padding: 10px;
@@ -551,14 +494,15 @@ h1 {
         text-align: center
     }
     .img {
-        grid-template-columns: repeat(auto-fit, 300px);
-        grid-template-rows: repeat(3,200px);
-    }
-    form.contacto.casa {
-        width: 70%;
-        padding: 10px;
         margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 400px);
+        grid-template-rows: repeat(1,300px);
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    iframe {
+        width: 350px;
     }
 }
-
 
